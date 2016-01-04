@@ -4,6 +4,7 @@ ruby "2.2.3"
 
 gemspec
 
+gem 'rails', '>= 5.0.0.beta1', '< 5.1'
 gem "delayed_job_active_record"
 gem "high_voltage"
 gem "markdown-rails"
