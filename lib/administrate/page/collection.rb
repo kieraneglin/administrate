@@ -22,9 +22,12 @@ module Administrate
       end
 
       def permitted_params(attr_name, params)
-        params.slice('id', 'page', 'per_page', 'search')
-              .merge(order_params_for(attr_name))
-              .permit!
+        params.slice(
+          "id",
+          "page",
+          "per_page",
+          "search"
+          ).merge(order_params_for(attr_name)).permit!
       end
 
       delegate :ordered_by?, :order_params_for, to: :order
