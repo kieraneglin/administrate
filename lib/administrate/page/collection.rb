@@ -26,8 +26,8 @@ module Administrate
           "id",
           "page",
           "per_page",
-          "search"
-          ).merge(order_params_for(attr_name)).permit!
+          "search",
+        ).merge(order_params_for(attr_name)).permit!
       end
 
       delegate :ordered_by?, :order_params_for, to: :order
