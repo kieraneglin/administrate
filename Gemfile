@@ -26,7 +26,8 @@ group :development, :test do
   gem "faker"
   gem "i18n-tasks"
   gem "pry-rails"
-  gem "rspec-rails"
+  gem "rspec-rails", "3.5.0.beta3"
+  gem "rails-controller-testing"
 end
 
 group :test do
