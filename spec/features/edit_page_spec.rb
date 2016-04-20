@@ -41,7 +41,7 @@ describe "customer edit page" do
 
     visit edit_admin_customer_path(customer)
     select "vip", from: "Kind"
-    click_on "Update Customer"
+    find(".form-actions input").click
 
     expect(page).to have_content("KIND")
     expect(page).to have_content("vip")
